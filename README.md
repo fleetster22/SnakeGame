@@ -9,9 +9,9 @@ The workspace contains two folders by default, where:
 - `src`: the folder to maintain sources
 - `App.java`: This is where the main method is located
 
-## <span style="color:green">Game Play</span>
+## Game Play
 
-- Move the mouse keys to direct the :snake: to eat and grow.
+- Move the mouse keys to direct the :snake:  to eat and grow.
 
 ## Requirements
 
