@@ -15,9 +15,6 @@ public class DataOfSquare {
         square = new SquarePanel(ColorList.get(color));
     }
 
-    // TODO Create method that adds color list to grid (square panel)
-    // TODO Create square panel
-
     public void ColorIt(int c) {
         square.ChangeColor(ColorList.get(c));
     }

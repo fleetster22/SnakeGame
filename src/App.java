@@ -5,7 +5,7 @@ public class App {
         System.out.println("Anaka's Awesome Snake Game");
 
         Window window = new Window();
-        // TODO Set window settings- exit on close
+
         window.setTitle("Anaka's Snake Game");
         window.setSize(500, 500);
         window.setVisible(true);
