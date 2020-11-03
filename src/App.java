@@ -7,7 +7,7 @@ public class App {
         Window window = new Window();
 
         window.setTitle("Anaka's Snake Game");
-        window.setSize(500, 500);
+        window.setSize(600, 600);
         window.setVisible(true);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

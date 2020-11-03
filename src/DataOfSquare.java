@@ -10,7 +10,8 @@ public class DataOfSquare {
         // This adds color to the ArrayList items
         ColorList.add(Color.white); // blank = 0
         ColorList.add(Color.blue); // food = 1
-        ColorList.add(Color.red); // snake = 2
+        ColorList.add(Color.green); // snake = 2
+        ColorList.add(Color.red); //
         color = c;
         square = new SquarePanel(ColorList.get(color));
     }

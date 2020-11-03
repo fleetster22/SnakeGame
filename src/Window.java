@@ -5,8 +5,9 @@ import java.util.ArrayList;
 
 public class Window extends JFrame {
     public static ArrayList<ArrayList<DataOfSquare>> Grid;
-    public static int width = 20;
-    public static int height = 20;
+    int gridNumber = 40;
+    public static int width = 40;
+    public static int height = 40;
 
     public Window() {
 
@@ -17,14 +18,14 @@ public class Window extends JFrame {
         for (int w = 0; w < width; w++) {
             data = new ArrayList<DataOfSquare>();
             for (int h = 0; h < height; h++) {
-                DataOfSquare newData = new DataOfSquare(2);
+                DataOfSquare newData = new DataOfSquare(0);
                 data.add(newData);
             }
             Grid.add(data);
         }
 
         // Sets layout of the window panel
-        getContentPane().setLayout(new GridLayout(20, 20, 0, 0));
+        getContentPane().setLayout(new GridLayout(gridNumber, gridNumber, 0, 0));
 
         // TODO Start and pause threads
         for (int w = 0; w < width; w++) {
@@ -36,7 +37,7 @@ public class Window extends JFrame {
 
         // TODO Position the snake
 
-        XY position = new XY(10, 10);
+        XY position = new XY(gridNumber / 2, gridNumber / 2);
         SnakeController c = new SnakeController(position);
         c.start();
 
